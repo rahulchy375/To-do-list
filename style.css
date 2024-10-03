@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & h1{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0px;
+        padding: 10px;
+        background-color: rgb(208, 206, 206);
+        border-top: 4px solid rgb(30, 255, 0);
+        border-bottom: 4px solid rgb(30, 255, 0);
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+
+    & .inputBox{
+        border: none;
+        border-left: 3px solid rgb(30, 255, 0);
+        border-right: 3px solid rgb(30, 255, 0);
+        outline: none;
+        background-color: rgb(208, 206, 206);
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+
+        &::placeholder{
+            font-size: 16px;
+        }
+    }
+
+    & .inputBtn{
+        background-color: rgb(4, 255, 0);
+        padding: 8px 15px;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+}
+
+.inputError{
+    font-size: 17px;
+    color: red;
+}
+
+.inputStore{
+    width: 60%;
+}
+
+.listDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(208, 206, 206);
+    margin: 10px 0px;
+    padding: 7px 10px;
+    border-left: 3px solid rgb(30, 255, 0);
+    border-right: 3px solid rgb(30, 255, 0);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+li{
+    list-style: none;
+    font-size: 21px;
+}
+
+.deleteBtn{
+    background-color: rgb(4, 255, 0);
+    padding: 8px 15px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media (width<=400px) {
+    .container{
+        width: 80%;
+    }
+
+    .heading{
+        font-size: 23px;
+    }
+
+    .inputDiv{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .inputBox{
+        width: 60%;
+        font-size: 18px !important;
+    }
+
+    .inputStore{
+        width: 100%;
+    }
+
+    .listDiv{
+        padding: 3px;
+        
+    }
+
+    li{
+        font-size: 19px;
+    }
+}
